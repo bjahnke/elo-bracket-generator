@@ -12,9 +12,27 @@ A CSV table is output showing the teams remaining after each round, and their up
 - pip
 - git
 
+# Installation
+After downloading the repository, navigate to the root folder and run the following command:
+```bash
+pip install -r requirements.txt
+```
+
 # Usage
 
 ```bash
 python elo-sim.py --input <input_file> --output <output_file>
 ```
 Input file is .json and output file is .csv, please include extensions. See sample-input-output folder for examples.
+
+You can use the sample input file to test the program.
+
+Windows
+```bash
+python elo-sim.py --input .\sample-input-output\teams.json --output .\sample-input-output\output.csv
+```
+
+Linux/Mac
+```bash
+python elo-sim.py --input ./sample-input-output/teams.json --output ./sample-input-output/output.csv
+```
